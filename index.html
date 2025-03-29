@@ -87,6 +87,64 @@
     width: 100%;
   }
 }
+.profile-card {
+	background-color: #050505;
+	border-radius: 15px;
+	box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+	text-align: center;
+	padding: 25px;
+	width: 320px;
+	position: relative;
+}
+.image-container {
+	position: relative;
+}
+.image-container img {
+	width: 100%;
+	border-radius: 10px;
+}
+.image-container .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity 0.4s ease;
+	border-radius: 10px;
+}
+.image-container:hover .overlay {
+	opacity: 1;
+}
+.overlay a {
+	color: #000000;
+	text-decoration: none;
+	font-size: 22px;
+	font-weight: bold;
+}
+.details {
+	margin-top: 15px;
+}
+.details h3, .details p {
+	margin: 5px 0;
+}
+.btn {
+	background-color: #ffbd42;
+            color: #000;
+            border: none;
+            padding: 10px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 12px;
+            font-weight: bold;
+}
+.btn:hover {
+	background-color: #e0a82e;
+}
 
 @keyframes typing-cursor {
   from {
@@ -95,6 +153,14 @@
   to {
     width: 0;
   }
+}
+.main-content {
+	display: grid;
+	place-items: center;
+	height: 100vh;
+	background: linear-gradient(135deg, #89f7fe, #66a6ff);
+	margin: 0;
+	font-family: Arial, sans-serif;
 }
 
 
@@ -162,7 +228,6 @@
 						'Engineer  ',
 						'Student  ',
 						'E-Sport Player',
-						'UI-UX Designer',
 						];
 
 						// Create a function to display the typing animation for a given text
@@ -353,6 +418,30 @@
 		<br>
 
 		<div class="row">
+			<h1 class="big-4">Achievements</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		<center>
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate">
+		<div class="profile-card">
+			<div class="image-container">
+				<img src="images/gate.jpg" alt="Profile Photo">
+			</div>
+			<div class="details">
+                <p><strong>GATE 2025 Qualified</strong></p>
+                <p>All India Rank: <strong>28736</strong></p>
+                <p>Passionate about web development and technical problem-solving.</p>
+				<p><a href="https://drive.google.com/file/d/1p6gc-J-KgyGnA4uYXWYd0MENkDZ_YjM7/view?usp=sharing" class="btn btn-primary py-4 px-5">Score Card</a></p>
+			</div>
+		</div>
+		</div>
+		</div>
+	</center>
+		<br>
+		<br>
+		<div class="row">
 			<h1 class="big-4">Education</h1>
 			<div class="underline"></div>
 		</div>
@@ -392,7 +481,7 @@
 
     		<div class="row justify-content-center mt-5">
     			<div class="col-md-6 text-center ftco-animate">
-    				<p><a href="https://drive.google.com/file/d/1hsjALZY8GilA9V9m2mt2DA4Dr8OWbOIt/view?usp=sharing" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    				<p><a href="https://drive.google.com/file/d/1d9JNZyvTDkSQap6_4F--RYNFV7_-XTxe/view?usp=sharing" class="btn btn-primary py-4 px-5">Download CV</a></p>
     			</div>
     		</div>
     	</div>
@@ -498,7 +587,7 @@
           <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
             <div class="block-18">
               <div class="text">
-                <strong class="number" data-number="50000">0</strong>
+                <strong class="number" data-number="5">0</strong>
                 <span>Cups of coffee</span>
               </div>
             </div>
@@ -567,7 +656,7 @@
           			<span class="icon-globe"></span>
           		</div>
           		<h3 class="mb-4">Download Resume</h3>
-	            <p><a href="https://drive.google.com/file/d/1CRC_g-cI8Y6J2W7D8kC3r6TktY9E8Kkb/view">resumelink</a></p>
+	            <p><a href="https://drive.google.com/file/d/1d9JNZyvTDkSQap6_4F--RYNFV7_-XTxe/view?usp=sharing">resumelink</a></p>
 	          </div>
           </div>
 
@@ -576,13 +665,13 @@
 			<br>
 			<div class="row justify-content-center">
 				<div class="col-md-7 ftco-animate text-center">
-					<h2>Have a<span> Question?  </span> <a href="feedback.html" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+					<h2>Have any<span> suggestions ?  </span> <a href="feedback.html" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
 				</div>
 			</div>
 				<br>
 					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
 					  <li class="ftco-animate normal-txt">Find me on  </li>
-					  
+					  <!-- <li class="ftco-animate"><a href="https://www.youtube.com/@RishabhMishraOfficial"><span class="icon-youtube"></span></a></li> -->
 					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/bandaru-abhinay-a2435a23a/"><span class="icon-linkedin"></span></a></li>  
 					  <li class="ftco-animate"><a href="https://x.com/abhi212004"><span class="icon-twitter"></span></a></li>
 					  <li class="ftco-animate"><a href="https://www.facebook.com/abhinay.bandaru.3"><span class="icon-facebook"></span></a></li>
